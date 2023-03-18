@@ -44,7 +44,7 @@ app.post('/api/notes', (req,res) => {
             id: new Date(),
         };
 
-        fs.readFile('./db/db.json', 'utf8', (err, data) => {
+        fs.readFile('./db/db.json', 'utf8', (error, data) => {
             if (error) {
                 console.log(error);
             } else {
